@@ -1,0 +1,22 @@
+#Neovim setup
+
+##Things to install
+*Packer
+*telescope
+*neovim-treesitter
+*nightfox theme
+*theprimagen/harpoon
+
+##How it all gels together?
+
+*init will load basics like lua/lastek and packer
+* dir 'after' contains the stuff thats auto-loaded after everything else is done loading
+*'after' also has some custom mappings inside telescope.lua
+*my 'lastek' config contains an init that loads packer and custom remap func
+
+
+##Troubleshooting
+
+If something doesnt compile then yo umay need to use the deveoper prompt in terminal
+
+If you have some errors when installing Mason plugins then you may need to install additional packages. Check error msg. This may be something like installing NPM or JDK. Convenient way of doing things is uing winget to install packages. Winget will make the packages available via path vars.
