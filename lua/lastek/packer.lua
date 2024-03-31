@@ -22,12 +22,13 @@ return require('packer').startup(function(use)
   }
 
   use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
-
   use( 'ThePrimeagen/harpoon')
-  
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
-
+--	use {
+--		'ms-jpq/coq_nvim',
+--		branch = 'coq'
+--	}
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v3.x',
@@ -35,7 +36,6 @@ return require('packer').startup(function(use)
 		  --- Uncomment the two plugins below if you want to manage the language servers from neovim
 		  {'williamboman/mason.nvim'},
 		  {'williamboman/mason-lspconfig.nvim'},
-
 		  -- LSP Support
 		  {'neovim/nvim-lspconfig'},
 		  -- Autocompletion
