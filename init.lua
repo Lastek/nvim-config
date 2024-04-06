@@ -7,3 +7,5 @@ else
 	require("lastek")
 	require("packer")
 end
+
+vim.o.clipboard = "unnamedplus"
