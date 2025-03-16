@@ -1,3 +1,6 @@
+if vim.g.vscode then
+
+else
 local lsp_zero = require('lsp-zero')
 --local coq = require("coq");
 local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -15,7 +18,7 @@ if vim.g.vscode then
 	require('mason-lspconfig').setup({
 		-- Replace the language servers listed here 
 		-- with the ones you want to install
-		ensure_installed = {'lua_ls','rust_analyzer', 'tsserver', 'quick_lint_js', 'html', 'intelephense'  },
+		ensure_installed = {'lua_ls','rust_analyzer', 'ts_ls', 'quick_lint_js', 'html', 'intelephense'  },
 		handlers = {
 			lsp_zero.default_setup,
 		},
@@ -35,4 +38,4 @@ if vim.g.vscode then
 	--  lsp_zero.quick_lint.js.setup({capabilities = lsp_capabilities})
 
 end
-
+end
