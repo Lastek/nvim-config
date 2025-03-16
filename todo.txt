@@ -1,0 +1,9 @@
+There is an issue where mason-lspconfig does not auto load the servers or configre anything
+I need to read the docs
+https://github.com/williamboman/mason-lspconfig.nvim?tab=readme-ov-file
+
+Pay attention to the s:etup part. 
+
+:h mason-lspconfig-quickstart
+
+	require("lspconfig").lua_ls.setup {}
